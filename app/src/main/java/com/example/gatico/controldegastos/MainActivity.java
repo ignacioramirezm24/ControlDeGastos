@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.example.gatico.controldegastos.Utilidades.Utilidades;
 
 public class MainActivity extends AppCompatActivity {
+    //hola mundo
 
     private Button btInsertar;
     private Button btLista;
