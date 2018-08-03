@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+//hola
         btInsertar = (Button) findViewById(R.id.btInsertar);
         btLista = (Button) findViewById(R.id.btLista);
         tvSQL = (TextView) findViewById(R.id.tvSQL);
