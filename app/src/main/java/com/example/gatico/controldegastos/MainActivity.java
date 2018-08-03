@@ -10,9 +10,7 @@ import android.widget.TextView;
 import com.example.gatico.controldegastos.Utilidades.Utilidades;
 
 public class MainActivity extends AppCompatActivity {
-    //hola mundo
-    //hola de nuevo
-
+    //Listo
     private Button btInsertar;
     private Button btLista;
     private TextView tvSQL;
@@ -20,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//hola
+
         btInsertar = (Button) findViewById(R.id.btInsertar);
         btLista = (Button) findViewById(R.id.btLista);
         tvSQL = (TextView) findViewById(R.id.tvSQL);
