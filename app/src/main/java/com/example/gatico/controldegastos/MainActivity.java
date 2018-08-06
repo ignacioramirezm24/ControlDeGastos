@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     //Listo
     private Button btInsertar;
     private Button btLista;
+    private Button btModificar;
     private TextView tvSQL;
 
     @Override
@@ -22,7 +23,9 @@ public class MainActivity extends AppCompatActivity {
 
         btInsertar = (Button) findViewById(R.id.btInsertar);
         btLista = (Button) findViewById(R.id.btLista);
+        btModificar =(Button) findViewById(R.id.btModificar);
         tvSQL = (TextView) findViewById(R.id.tvSQL);
+
         ConexionSQLiteHelper conn = new ConexionSQLiteHelper(this, "bd_gasto", null, 1);
         tvSQL.setText(Utilidades.CREAR_TABLA_GASTO);
 
@@ -41,6 +44,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Acceder al segundo activity y mandarle un string
                 Intent intent = new Intent(MainActivity.this, ConsultarListaGasto.class);
+                //intent.putExtra("greeter", GREETER);
+                startActivity(intent);
+            }
+        });
+
+        btModificar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Acceder al segundo activity y mandarle un string
+                Intent intent = new Intent(MainActivity.this, ConsultarGasto.class);
                 //intent.putExtra("greeter", GREETER);
                 startActivity(intent);
             }

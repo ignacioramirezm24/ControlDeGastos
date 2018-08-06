@@ -18,7 +18,7 @@
         android:weightSum="1">
 
         <EditText
-            android:id="@+id/etConcepto"
+            android:id="@+id/etConsecutivo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.93"
@@ -35,47 +35,42 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/campoNombreConsulta"
+        android:id="@+id/etCantidad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="137dp"
-        android:hint="Nombre" />
+        android:layout_marginTop="82dp"
+        android:hint="Cantidad" />
 
     <EditText
-        android:id="@+id/campoTelefonoConsulta"
+        android:id="@+id/etConcepto"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="140dp"
+        android:hint="Concepto" />
+
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="189dp"
-        android:hint="Telefono" />
+        android:layout_marginBottom="207dp"
+        android:layout_weight="0.5"
+        android:text="Actualizar" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="114dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="74dp"
-        android:orientation="horizontal"
-        android:weightSum="1">
-
-        <Button
-            android:id="@+id/btnActualizar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:text="Actualizar" />
-
-        <Button
-            android:id="@+id/btnEliminar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:text="Eliminar" />
-
-    </LinearLayout>
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnActualizar"
+        android:layout_marginEnd="39dp"
+        android:layout_weight="0.5"
+        android:text="Eliminar" />
 
 
 </RelativeLayout>

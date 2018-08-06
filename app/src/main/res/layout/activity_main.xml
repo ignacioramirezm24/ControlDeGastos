@@ -35,12 +35,12 @@
             tools:layout_editor_absoluteY="79dp" />
 
         <Button
-            android:id="@+id/btConsultar"
+            android:id="@+id/btModificar"
             android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_marginTop="173dp"
-            android:text="Consultar"
+            android:text="Modificar"
             tools:layout_editor_absoluteX="140dp"
             tools:layout_editor_absoluteY="60dp" />
 
