@@ -57,6 +57,7 @@ public class ConsultarListaGasto extends AppCompatActivity {
 
         for (int i = 0; i < listaGasto.size(); i++) {
             listaInformacion.add(listaGasto.get(i).getId() + " - "
+                    + listaGasto.get(i).getFecha() + " \n"
                     + listaGasto.get(i).getConcepto() + " - "
                     + listaGasto.get(i).getCantidad());
 

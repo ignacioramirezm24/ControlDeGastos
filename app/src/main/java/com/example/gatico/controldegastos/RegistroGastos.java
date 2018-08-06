@@ -38,7 +38,6 @@ public class RegistroGastos extends AppCompatActivity {
             public void onClick(View view) {
             registrarGasto();
 
-
             }
         });
 
@@ -53,10 +52,16 @@ public class RegistroGastos extends AppCompatActivity {
         values.put(Utilidades.CAMPO_CONCEPTO, etConcepto.getText().toString());
 
         Long idResultante = db.insert(Utilidades.TABLA_GASTO, Utilidades.CAMPO_ID, values);
-        Toast.makeText(getApplicationContext(),"id Registro: "+ idResultante, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),idResultante +"Nuevo regitro agregado: "
+                                                + etCantidad.getText() +" por: "
+                                                + etConcepto, Toast.LENGTH_SHORT).show();
         db.close();
-        tvSentencia.setText(Utilidades.CREAR_TABLA_GASTO);
+        //tvSentencia.setText(Utilidades.CREAR_TABLA_GASTO);
+        limpiar();
     }
 
-
+    private  void limpiar(){
+        etConcepto.setText("");
+        etCantidad.setText("");
+    }
 }

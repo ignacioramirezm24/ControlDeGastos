@@ -14,7 +14,7 @@
 
         <Button
             android:id="@+id/btLista"
-            android:layout_width="wrap_content"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
@@ -25,7 +25,7 @@
 
         <Button
             android:id="@+id/btInsertar"
-            android:layout_width="94dp"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
@@ -36,7 +36,7 @@
 
         <Button
             android:id="@+id/btConsultar"
-            android:layout_width="wrap_content"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_marginTop="173dp"
@@ -47,11 +47,10 @@
         <TextView
             android:id="@+id/tvSQL"
             android:layout_width="348dp"
-            android:layout_height="216dp"
+            android:layout_height="156dp"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="31dp"
-            android:layout_marginStart="17dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
             android:text="TextView" />
     </RelativeLayout>
 
