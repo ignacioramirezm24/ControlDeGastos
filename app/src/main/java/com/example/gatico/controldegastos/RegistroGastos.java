@@ -32,17 +32,18 @@ public class RegistroGastos extends AppCompatActivity {
         btRegistrarGasto = (Button) findViewById(R.id.btRegistrarGasto);
         tvSentencia = (TextView) findViewById(R.id.tvSentencia);
 
-       btRegistrarGasto.setOnClickListener(new View.OnClickListener() {
+        btRegistrarGasto.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-            registrarGasto();
+                registrarGasto();
 
             }
         });
 
     }
-    private void registrarGasto(){
+
+    private void registrarGasto() {
         ConexionSQLiteHelper conn = new ConexionSQLiteHelper(this, "bd_gasto", null, 1);
         SQLiteDatabase db = conn.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -52,15 +53,15 @@ public class RegistroGastos extends AppCompatActivity {
         values.put(Utilidades.CAMPO_CONCEPTO, etConcepto.getText().toString());
 
         Long idResultante = db.insert(Utilidades.TABLA_GASTO, Utilidades.CAMPO_ID, values);
-        Toast.makeText(getApplicationContext(),idResultante +"Nuevo regitro agregado: "
-                                                + etCantidad.getText() +" por: "
-                                                + etConcepto, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), idResultante + "Nuevo regitro agregado: "
+                + etCantidad.getText() + " por: "
+                + etConcepto, Toast.LENGTH_SHORT).show();
         db.close();
         //tvSentencia.setText(Utilidades.CREAR_TABLA_GASTO);
         limpiar();
     }
 
-    private  void limpiar(){
+    private void limpiar() {
         etConcepto.setText("");
         etCantidad.setText("");
     }

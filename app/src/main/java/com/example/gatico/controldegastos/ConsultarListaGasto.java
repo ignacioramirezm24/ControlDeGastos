@@ -30,7 +30,7 @@ public class ConsultarListaGasto extends AppCompatActivity {
 
         ArrayAdapter adaptador = new ArrayAdapter(this, android.R.layout.simple_list_item_1, listaInformacion);
         lvGastos.setAdapter(adaptador);
- }
+    }
 
     private void consultarListaGastos() {
         SQLiteDatabase db = conn.getReadableDatabase();

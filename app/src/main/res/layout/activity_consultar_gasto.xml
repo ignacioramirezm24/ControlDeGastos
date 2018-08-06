@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
 
 
-
     android:id="@+id/activity_consultar_usuarios"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -30,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="Buscar"/>
+            android:text="Buscar" />
 
 
     </LinearLayout>
@@ -67,14 +66,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
-            android:text="Actualizar"/>
+            android:text="Actualizar" />
 
         <Button
             android:id="@+id/btnEliminar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
-            android:text="Eliminar"/>
+            android:text="Eliminar" />
 
     </LinearLayout>
 
